@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function isTheAverageWhole(numbersArray){
+      var total = 0;
+      var result = 0;
+      for(var i =0; i<=numbersArray.length-1; i++){
+        total += numbersArray[i];
+      }
+      var average = total / numbersArray.length;
+
+      var stringAvg = average.toString();
+      var counter = undefined;
+      for(var x = 0; x<=stringAvg.length-1; x++){
+        if(stringAvg[x]==='.'){
+          result++;
+        }
+      }
+      if(result === 0){
+        return true;
+      } else{
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
