@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function dayFinder(stringDate){
+      var date = new Date(stringDate);
+      var dateDay = date.getDay();
+
+      if(dateDay === 0){
+        return 'Sunday';
+      }else if(dateDay === 1){
+        return 'Monday';
+      }else if(dateDay === 2){
+        return 'Tuesday';
+      }else if(dateDay === 3){
+        return 'Wednesday';
+      }else if(dateDay === 4){
+        return 'Thursday';
+      }else if(dateDay === 5){
+        return 'Friday';
+      }else{
+        return 'Saturday;'
+      }
+    }
+  </script>
+</body>
+</html>
