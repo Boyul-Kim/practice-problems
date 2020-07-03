@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function convertMinutesToSeconds(timeToConvert){
+      var min = '';
+      var sec = '';
+      for(var i = 0; i<=timeToConvert.length-1; i++){
+        if(timeToConvert[i] === ':'){
+          min = timeToConvert[i-2] + timeToConvert[i-1];
+          sec = timeToConvert[i+1] + timeToConvert[i+2];
+        }
+      }
+      return (Number(min)*60) + Number(sec);
+    }
+  </script>
+</body>
+</html>
