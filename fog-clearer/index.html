@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function fogClearer(stringToClear){
+      var word = '';
+      var clear = "It's a clear day!"
+      for(var i = 0; i<=stringToClear.length-1; i++){
+        if(stringToClear[i] !== 'f' && stringToClear[i] !== 'o' && stringToClear[i] !== 'g'){
+          word += stringToClear[i];
+        }
+      }
+      if(word.length === 0 || word.length === stringToClear.length){
+        return clear;
+      }else{
+        return word;
+      }
+    }
+  </script>
+</body>
+</html>
