@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function volumeCalculator(boxesArray){
+      var total = 0;
+      for(var i = 0; i<=boxesArray.length-1; i++){
+        total += boxesArray[i][0] * boxesArray[i][1] * boxesArray[i][2];
+      }
+      return total;
+    }
+  </script>
+</body>
+</html>
