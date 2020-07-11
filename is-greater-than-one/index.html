@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function isGreaterThanOne(fraction){
+      var index = 0;
+      var numberOne = 0;
+      var numberTwo = 0;
+      for(var i = 0; i<=fraction.length-1; i++){
+        if(fraction[i] === '/'){
+          index = i;
+        }
+      }
+      var indexTwo = 0;
+      var indexThree = index+1;
+      while(indexTwo < index){
+        numberOne += Number(fraction[indexTwo]);
+        indexTwo++;
+      }
+
+      while(indexThree <= fraction.length-1){
+        numberTwo += Number(fraction[indexThree]);
+        indexThree++;
+      }
+
+      if((numberOne/numberTwo) > 1){
+        return true;
+      }else{
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
